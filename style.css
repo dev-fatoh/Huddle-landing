@@ -1,6 +1,6 @@
 @import 'https://fonts.google.com/specimen/Poppins';
 @import'https://fonts.google.com/specimen/Open+Sans';
-
+/*global setting in the body*/
 body{
     
     width: 100%;
@@ -117,6 +117,7 @@ header .logo{
     color: hsl(300,69%,71%);
     transform: scale(1.2);
 }
+/*media query */
 @media(min-width:375px){
     body{
         overflow:auto;
