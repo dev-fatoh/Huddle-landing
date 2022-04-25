@@ -1,0 +1,162 @@
+@import 'https://fonts.google.com/specimen/Poppins';
+@import'https://fonts.google.com/specimen/Open+Sans';
+
+body{
+    
+    width: 100%;
+    min-height:100vh;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box ;
+    overflow: hidden;
+    
+    
+}
+.container{
+    width: 100%;
+    max-width:1440px;
+    font-family: 'open sans',Sans-Serif;
+    
+    background-image: url('./images/bg-mobile.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+   
+    background-color: hsl(257, 40%, 49%);
+    display: grid;
+    grid-template-columns:1fr;
+   
+}
+header{
+    width: 40%;
+    height: 60px;
+    margin: 0;
+    margin-left: 2rem;
+    margin-bottom:3rem;
+}
+header .logo{
+    width: 100%;
+    height: 100%;
+    justify-self:start;
+}
+.showcase{
+    max-width:85%;
+    margin: 0 auto;
+    
+}
+.showcase img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.content{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    
+}
+.content h1{
+    font-size: 1.8rem;
+    margin: 1rem;
+    font-family: 'Poppins',Sans-Serif;
+    line-height: 1.4;
+    font-weight: 500;
+    text-transform: capitalize;
+
+    color: #fff;
+}
+.content p{
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 1rem;
+    color: #fff;
+    
+}
+.content a{
+    display: block;
+    padding: .6em;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 16px;
+    background: #fff;
+    color: hsl(257,40%,49%);
+    border: 0;
+    border-radius:25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+}
+.content a:hover{
+    background: hsl(300,69%,71%);
+    color: #FFF;
+}
+.social{
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    padding: 1rem;
+}
+.social li a{
+    display: block;
+    padding: .5rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 12px;
+
+}
+.social li a ion-icon{
+    font-size: 1.2rem;
+    color:#fff;
+    transition: .5s;
+}
+.social li a ion-icon:hover{
+    color: hsl(300,69%,71%);
+    transform: scale(1.2);
+}
+@media(min-width:375px){
+    body{
+        overflow:auto;
+    }
+    .container{
+        background-position:
+        left;
+        background-size: cover;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 1fr 100px;
+    }
+    header{
+        margin-bottom:0;
+        grid-column: 1/2;
+        grid-row:1/2 ;
+    }
+    .content{
+        grid-column:2/3;
+        grid-row: 2/3;
+    }
+    .content h1,.content p{
+        text-align: left;
+    }
+    .content a{
+        display: inline-block;
+        margin-right: 6rem;
+    }
+    .showcase{
+        max-width: 100%;
+        padding: 1rem;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+   
+    .social{
+       
+        grid-column: 2/3;
+        grid-row: 3/4;
+        justify-content: end;
+    
+        
+    }
+}
