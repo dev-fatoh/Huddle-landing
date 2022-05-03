@@ -142,10 +142,11 @@ header .logo{
         overflow:auto;
     }
     .container{
+        padding: 2rem;
         background-position:
         left;
         background-size: cover;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 2fr;
         grid-template-rows: 100px 1fr 100px;
     }
     header{
