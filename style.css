@@ -4,11 +4,12 @@
 body{
     
     width: 100%;
-    min-height:100vh;
+    min-height: 100vh;
     margin: 0;
     padding:0;
     box-sizing: border-box ;
-    overflow: hidden;
+    
+    
     
     
 }
@@ -20,8 +21,7 @@ body{
     background-image: url('./images/bg-mobile.svg');
     background-position: top;
     background-repeat: no-repeat;
-   
-    background-color: hsl(257, 40%, 49%);
+   background-color: hsl(257, 40%, 49%);
     display: grid;
     grid-template-columns:1fr;
    
@@ -118,6 +118,24 @@ header .logo{
     color: hsl(300,69%,71%);
     transform: scale(1.2);
 }
+.container footer{
+    width: 80%;
+    background: transparent;
+
+    color: #fff;
+    margin: 0 auto;
+    
+}
+.container footer p{
+    display: flex;
+    flex-direction: column;
+}
+.container footer p a{
+    display: block;
+    text-decoration:none;
+   
+    
+}
 /*media query */
 @media(min-width:375px){
     body{
@@ -159,6 +177,11 @@ header .logo{
         grid-row: 3/4;
         justify-content: end;
     
+        
+    }
+    footer{
+        grid-column: 1/2;
+        grid-row: 4/5;
         
     }
 }
